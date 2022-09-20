@@ -31,8 +31,8 @@ function sortTableByColumn(table, column, asc = true) {
 
     // Remember how the column is currently sorted
     table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "the-sort-desc"));
-    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc, asc");
-    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc, !asc");
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc,asc");
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc,!asc");
 }
 
 document.querySelectorAll(".table-sortable th").forEach(headerCell => {
@@ -44,3 +44,7 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
         sortTableByColumn(tableElement, headerIndex, !currentIsAscending)
     })
 })
+
+// 1. Make descending work
+// 2. Fix pokedex # order
+// 3. Add styles
