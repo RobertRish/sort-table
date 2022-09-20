@@ -31,8 +31,8 @@ function sortTableByColumn(table, column, asc = true) {
 
     // Remember how the column is currently sorted
     table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "the-sort-desc"));
-    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc,asc");
-    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc,!asc");
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-asc", asc);
+    table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle("th-sort-desc", !asc);
 }
 
 document.querySelectorAll(".table-sortable th").forEach(headerCell => {
