@@ -55,6 +55,6 @@ document.querySelectorAll(".table-sortable th").forEach((headerCell) => {
   });
 });
 
-// 1. Fix sort order to numerically sort by numerical data type instead of unicode character numerical value
-// 2. Fix pokedex # order
+
 // 3. Add styles
+// 4. Add README and pin on GitHub
