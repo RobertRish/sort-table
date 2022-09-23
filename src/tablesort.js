@@ -61,3 +61,4 @@ document.querySelectorAll(".table-sortable th").forEach((headerCell) => {
 // .gitmessage commit template test
 
 // test
+// commit message test
