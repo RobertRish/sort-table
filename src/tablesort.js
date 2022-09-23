@@ -62,3 +62,4 @@ document.querySelectorAll(".table-sortable th").forEach((headerCell) => {
 
 // test
 // commit message test
+// vsc commit editor test
